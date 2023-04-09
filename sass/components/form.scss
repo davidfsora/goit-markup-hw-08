@@ -1,0 +1,131 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+
+    &__title {
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+    }
+    
+    &__paragraph {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        margin-top: 4px;
+        color: $paragraph-color;
+    }
+    
+    &__field {
+        position: relative;
+    }
+    
+    &__icon {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-65%);
+        fill: $heading-color;
+        transition: fill $general-transition;
+    }
+    
+    &__input {
+        width: 100%;
+        height: 40px;
+        padding: 11px 11px 11px 41px;
+        margin-bottom: 4px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition: border $general-transition;
+
+        &:hover, &:focus {
+            border: 1px solid $main-color;
+            cursor: pointer;
+            outline: none;
+
+            & +.contact-form__icon {
+                fill: $main-color;
+            }
+        } 
+    }
+    
+    &__textarea {
+        width: 100%;
+        height: 120px;
+        padding: 12px 16px;
+        margin-bottom: 10px;
+        resize: none;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition: border $general-transition;
+
+        &:hover, &:focus {
+            border: 1px solid $main-color;
+            cursor: pointer;
+            outline: none;
+        }
+    }
+
+    &__checkbox-container {
+        width: 16px;
+        height: 15px;
+        position: relative;
+    }
+    
+    &__checkbox {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 7px;
+        padding-left: 14px;
+    }
+    
+    &__checkbox-input {
+        position: absolute;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+
+        &:checked + .check-icon {
+            border: 1px solid $main-color;
+            background-color: $main-color;    
+        }
+    }
+    
+    &__checkbox-label {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: $paragraph-color;
+    }
+    
+    &__button-container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__submit-button {
+        width: 200px;
+        height: 50px;
+        background-color: $main-color;
+        color: $hovereditemtext-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border: none;
+        border-radius: 4px;
+        transition: background-color $general-transition;
+
+        &:hover {
+            background-color: $hoveredservicebutton-color;
+            cursor: pointer;
+        }
+    }
+}

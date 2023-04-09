@@ -1,0 +1,47 @@
+.footer {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &__container {
+        height: auto;
+        width: auto;
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: left;
+        flex-direction: column;
+    }
+    
+    &__location {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: $hovereditemtext-color;
+    }
+    
+    &__link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.socialmedia {
+    margin: 0 94px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $hovereditemtext-color;
+    }
+}

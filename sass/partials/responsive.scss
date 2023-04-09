@@ -1,0 +1,39 @@
+@media (max-width: 479px) {
+    .navigation,
+    .contact,
+    #services {
+        display: none;
+    }
+
+    .features__list, .team-members__card, .card {
+        width: calc(100% - 30px);
+        align-items: center;
+    }
+
+    .section-padding, .team-members {
+        padding: 50px;
+        justify-content: center;
+    }
+
+    .footer {
+        gap: 10px;
+    }
+
+    .footer, .footer__container, .subscription, .subscription__form {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(o-min-device-pixel-ratio: 2/1),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.bg {
+        background-image: url("../images/bg@2x.jpg");
+    }
+}

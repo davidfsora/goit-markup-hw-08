@@ -1,0 +1,49 @@
+.hero {
+    height: 600px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4));
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 60px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $hovereditemtext-color;
+    }
+    
+    &__button {
+        background-color: $main-color;
+        color: $hovereditemtext-color;
+        border: none;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        align-items: center;
+        text-align: center;
+        vertical-align: middle;
+        letter-spacing: 0.06em;
+        border-radius: 4px;
+        padding: 0.5rem 2rem;
+        transition: background-color $general-transition;
+
+        &:hover {
+            background-color: $hoveredservicebutton-color;
+            cursor: pointer;
+        }
+    }
+    
+}
+
+.bg {
+    width: auto;
+    height: 600px;
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

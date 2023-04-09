@@ -1,0 +1,79 @@
+.header {
+    border-bottom: 1px solid $border-color;
+    height: 80px;
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+    }
+}
+
+// navigation block
+
+.navigation {
+    &__pages {
+        margin: 0;
+        display: flex;
+        gap: 2rem;
+    }
+    
+    &__page {
+        display: flex;
+    }
+    
+    &__link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        padding: 2rem 1rem;
+    }
+}
+
+// contact block
+
+.contact {
+    display: flex;
+
+    &__info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    &__data {
+        display: flex;
+        align-items: center;
+        padding: 1rem 0.5rem;
+        margin: 0 0.5rem;
+    }
+    
+    &__data:hover {
+        color: $main-color;
+        cursor: pointer;
+
+        .icon-envelope, .icon-cellphone, .contact__link {
+            fill: $main-color;
+            color: $main-color;
+        }
+    }
+    
+    &__icon {
+        display: flex;
+        align-items: center;
+        padding: 0 0.5rem;
+    }
+    
+    &__mode {
+        display: flex;
+        align-items: center;
+        padding: 0 0.5rem;
+    }
+    
+    &__link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: $paragraph-color;
+    }
+}

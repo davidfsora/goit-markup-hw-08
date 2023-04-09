@@ -1,0 +1,123 @@
+.container {
+    max-width: 1200px;
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.extend-content {
+    justify-content: space-between;
+}
+
+.section-padding {
+    padding: 95px 0;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo__container {
+    margin-right: 3rem;
+    padding-left: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    text-align: right;
+    letter-spacing: 0.03em;
+    color: $main-color;
+}
+
+.current {
+    color: $main-color;
+}
+
+.currentpage {
+    position: relative;
+    color: $main-color;
+}
+
+.currentpage::after {
+    content:"";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    color: $main-color;
+    background-color: $main-color;
+    border-radius: 2px;
+}
+
+.card-container {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.cards-container {
+    width: 100%;
+    height: auto;
+    padding-bottom: 94px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    visibility: visible;
+    transition: opacity $general-transition, visibility $general-transition;
+    z-index: 1;
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.icon-envelope, .icon-cellphone {
+    fill: $paragraph-color;
+    transition: fill $general-transition;
+}
+
+.icon-instagram, .icon-twitter, .icon-facebook, .icon-linkedin,
+.icon-yayco, .icon-companytag, .icon-company,
+.icon-fosterpeters, .icon-brand, .icon-companytagline {
+    fill: $customerbox-color;
+    transition: fill $general-transition;
+}
+
+.check-icon {
+    width: 16px;
+    height: 15px;
+    border: 1px solid $heading-color;
+    border-radius: 1px;
+    transition: background-color $general-transition, border $general-transition;
+}
+
+.send-icon {
+    fill: $hovereditemtext-color;
+}

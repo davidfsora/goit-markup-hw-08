@@ -1,0 +1,63 @@
+.menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+
+    &:hover,
+    &:focus {
+        fill: $main-color;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 480px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .contact__data {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 786px) {
+    .navigation__pages {
+        gap: 1rem;
+    }
+
+    .contact__info {
+        flex-direction: column;
+    }
+
+    .contact__data {
+        padding: 0.5rem;
+    }
+
+    #services {
+        display: none;
+    }
+
+    .footer {
+        gap: 10px;
+    }
+
+    .footer, .footer__container, .subscription, .subscription__form {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}

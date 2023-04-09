@@ -1,0 +1,59 @@
+// variables
+@import "./utils/variables.scss";
+
+// base
+@import "./utils/base.scss";
+
+// generics
+@import "./partials/generics.scss";
+
+// header
+@import "./components/header.scss";
+
+// hero
+@import "./components/hero.scss";
+
+// modal
+@import "./components/modal.scss";
+
+// form
+@import "./components/form.scss";
+
+// features
+@import "./components/features.scss";
+
+// services
+@import "./components/services.scss";
+
+// team
+@import "./components/team.scss";
+
+// socialmedia
+@import "./components/socialmedia.scss";
+
+// card
+@import "./components/card.scss";
+
+// customers
+@import "./components/customers.scss";
+
+// filters
+@import "./components/filters.scss";
+
+// footer
+@import "./components/footer.scss";
+
+// subscription
+@import "./components/subscription.scss";
+
+// media queries
+@import "./partials/responsive.scss";
+
+// menu-toogle
+@import "./components/menu-toogle.scss";
+
+// menu-container
+@import "./components/menu-container.scss";
+
+// mobile-menu
+@import "./components/mobile-menu.scss";

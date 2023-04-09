@@ -1,0 +1,45 @@
+.features {
+    &__box {
+        width: 100%;
+        height: auto;
+        padding: 95px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    &__list {
+        width: 270px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: left;    
+    }
+    
+    &__picture {
+        width: 100%;
+        height: 120px;
+        padding: 0;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;  
+        justify-content: center;
+        border-radius: 4px;
+        background-color: $teambackground-color;
+    }
+    
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+    
+    &__info {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+    }
+}

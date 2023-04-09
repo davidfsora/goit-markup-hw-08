@@ -1,0 +1,31 @@
+.filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 94px 0px 50px 0px;
+    gap: 8px;
+
+    &__button {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        white-space: nowrap;
+        padding: 0.5rem 1rem;
+        color: $heading-color;
+        background-color: $filterbuttonback-color;
+        border: none;
+        border-radius: 4px;
+        transition: background-color $general-transition, color $general-transition, border $general-transition, box-shadow $general-transition;
+
+        &:hover {
+            background-color: $main-color;
+            color: $hovereditemtext-color;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0px 4px 4px $paragraph-color;
+        }
+    }
+}
